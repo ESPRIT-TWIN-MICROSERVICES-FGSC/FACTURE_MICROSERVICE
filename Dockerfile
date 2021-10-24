@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+EXPOSE 8084
+ADD /target/FACTURE-MICROSERVICES-0.0.1-SNAPSHOT.jar FACTURE.jar
+ENTRYPOINT ["java","-jar","FACTURE.jar"]
